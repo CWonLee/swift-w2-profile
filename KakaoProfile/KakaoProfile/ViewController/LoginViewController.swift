@@ -30,14 +30,7 @@ class LoginViewController: UIViewController {
         case .success:
             guard let mainViewController = self.storyboard?.instantiateViewController(withIdentifier: "mainViewController") else { return }
                             self.navigationController?.pushViewController(mainViewController, animated: true)
-        case .emptyId:
-            showAlert(controller: self, message: "\(checkUser)", seconds: 0.5)
-        case .emptyPassword:
-            showAlert(controller: self, message: "\(checkUser)", seconds: 0.5)
-        case .noExistId:
-            showAlert(controller: self, message: "\(checkUser)", seconds: 0.5)
-        case .wrongPassword:
-            showAlert(controller: self, message: "\(checkUser)", seconds: 0.5)
+        default: showAlert(controller: self, message: "\(checkUser)", seconds: 0.5)
         }
     }
 }
