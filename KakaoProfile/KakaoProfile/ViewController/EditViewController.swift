@@ -18,7 +18,7 @@ class EditViewController: UIViewController {
     var descriptionText : String = ""
     var profileImage : UIImage?
     private let imagePicker = UIImagePickerController()
-    var profileDelegate: ProfileDelegate?
+    weak var profileDelegate: ProfileDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()

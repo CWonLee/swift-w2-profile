@@ -57,23 +57,59 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1856.521739130435" y="-185.49107142857142"/>
+            <point key="canvasLocation" x="2766.666666666667" y="-185.49107142857142"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="wcP-fH-71L">
             <objects>
-                <viewController title="Item 2" id="0Na-c8-cK6" sceneMemberID="viewController">
+                <viewController title="Item 2" id="0Na-c8-cK6" customClass="LoginViewController" customModule="KakaoProfile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aIB-Nv-hAf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kakao_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="RGs-iQ-lT6">
+                                <rect key="frame" x="158" y="144" width="111" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ID" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Pr6-MI-Vdw">
+                                <rect key="frame" x="38" y="297" width="339" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="dMH-bS-jCc">
+                                <rect key="frame" x="38" y="370" width="339" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EqE-K1-Beu">
+                                <rect key="frame" x="162" y="448" width="91" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="로그인">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonClicked:" destination="0Na-c8-cK6" eventType="touchUpInside" id="FKV-Ui-9ih"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zbV-fd-FPR"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99652487040000004" green="0.91047090289999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="a3u-cF-0tg"/>
+                    <navigationItem key="navigationItem" id="3V8-as-1xH"/>
+                    <connections>
+                        <outlet property="id" destination="Pr6-MI-Vdw" id="cwj-l0-Lb5"/>
+                        <outlet property="password" destination="dMH-bS-jCc" id="kk8-ar-mSa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qTO-wX-179" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1857" y="454"/>
+            <point key="canvasLocation" x="2766.666666666667" y="453.34821428571428"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Prb-wS-gbb">
@@ -87,7 +123,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="SEj-HY-CKh"/>
-                        <segue destination="0Na-c8-cK6" kind="relationship" relationship="viewControllers" id="MKu-Ao-tke"/>
+                        <segue destination="NCp-h0-E4D" kind="relationship" relationship="viewControllers" id="MKu-Ao-tke"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q7R-4c-8V8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -175,11 +211,63 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wu2-PD-LK2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2566.666666666667" y="-185.49107142857142"/>
+            <point key="canvasLocation" x="3476.811594202899" y="-185.49107142857142"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="bKS-Xm-hch">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NCp-h0-E4D" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="a3u-cF-0tg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h7o-KQ-1OK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0Na-c8-cK6" kind="relationship" relationship="rootViewController" id="Oqx-WI-AQh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6wx-Hi-CqY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1856.521739130435" y="453.34821428571428"/>
+        </scene>
+        <!--뉴스-->
+        <scene sceneID="TN9-P9-xrX">
+            <objects>
+                <viewController storyboardIdentifier="mainViewController" id="XO9-Ml-RoH" customClass="MainViewController" customModule="KakaoProfile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QsD-C1-MEc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Vc-e7-iqc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9iA-CO-YGN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9iA-CO-YGN" firstAttribute="bottom" secondItem="9Vc-e7-iqc" secondAttribute="bottom" id="Lkr-Ph-wP1"/>
+                            <constraint firstItem="9iA-CO-YGN" firstAttribute="trailing" secondItem="9Vc-e7-iqc" secondAttribute="trailing" id="XKa-vk-YdS"/>
+                            <constraint firstItem="9Vc-e7-iqc" firstAttribute="leading" secondItem="9iA-CO-YGN" secondAttribute="leading" id="YPg-hg-K5S"/>
+                            <constraint firstItem="9Vc-e7-iqc" firstAttribute="top" secondItem="9iA-CO-YGN" secondAttribute="top" id="gvC-EU-CT4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="뉴스" id="mWP-4E-H9U"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PJF-Xm-gii" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3477" y="453"/>
         </scene>
     </scenes>
     <resources>
         <image name="camera.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="kakao_logo.png" width="118" height="107"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

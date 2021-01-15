@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol ProfileDelegate {
+protocol ProfileDelegate : class {
     func receivedProfile(image: UIImage?, name: String, description: String)
 }
 

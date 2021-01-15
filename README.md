@@ -36,3 +36,15 @@
 
 <img width="266" alt="sc1" src="https://user-images.githubusercontent.com/46565404/104442290-324aec80-55d8-11eb-8c7b-6adcd18b1ef8.png">
 <img width="265" alt="sc2" src="https://user-images.githubusercontent.com/46565404/104442344-4393f900-55d8-11eb-8dd7-98e629d7fa3c.png">
+
+### Step5
+1/14 15:58
+1. profileDelegate 선언 -> weak로 수정
+2. 로그인화면 imageView, textField, Button 추가
+3. userDB 클래스 구현
+4. 로그인 기능 구현
+5. 새로운 ViewController 생성 후 MainViewController를 custom class로 지정
+6. WK WebView에서 daum페이지 띄우게 구현
+
+<img width="271" alt="sc1" src="https://user-images.githubusercontent.com/46565404/104555607-7fcf6400-5681-11eb-9d2a-e20c5fb94ef7.png">
+<img width="268" alt="sc2" src="https://user-images.githubusercontent.com/46565404/104555670-983f7e80-5681-11eb-9e31-3e623bcdedf9.png">

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		321C220625B123B700C65638 /* kakao_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 321C220525B123B700C65638 /* kakao_logo.png */; };
+		32483D0325AFD8FF005EE9DE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32483D0225AFD8FF005EE9DE /* LoginViewController.swift */; };
+		32483D0F25AFF0BD005EE9DE /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32483D0E25AFF0BD005EE9DE /* UserInfo.swift */; };
+		32483D1525B0048F005EE9DE /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32483D1425B0048F005EE9DE /* UIViewController+.swift */; };
+		32483D2425B017FF005EE9DE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32483D2325B017FF005EE9DE /* MainViewController.swift */; };
 		32A4C42D25AC596200F3E4BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4C42C25AC596200F3E4BD /* AppDelegate.swift */; };
 		32A4C42F25AC596200F3E4BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4C42E25AC596200F3E4BD /* SceneDelegate.swift */; };
 		32A4C43125AC596200F3E4BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4C43025AC596200F3E4BD /* ViewController.swift */; };
@@ -36,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		321C220525B123B700C65638 /* kakao_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kakao_logo.png; sourceTree = "<group>"; };
+		32483D0225AFD8FF005EE9DE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		32483D0E25AFF0BD005EE9DE /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		32483D1425B0048F005EE9DE /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		32483D2325B017FF005EE9DE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		32A4C42925AC596200F3E4BD /* KakaoProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A4C42C25AC596200F3E4BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32A4C42E25AC596200F3E4BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,8 +93,34 @@
 			children = (
 				32A4C43025AC596200F3E4BD /* ViewController.swift */,
 				32D0F82B25AD896700C3D287 /* EditViewController.swift */,
+				32483D0225AFD8FF005EE9DE /* LoginViewController.swift */,
+				32483D2325B017FF005EE9DE /* MainViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		32483D0725AFDB5F005EE9DE /* ImageFile */ = {
+			isa = PBXGroup;
+			children = (
+				321C220525B123B700C65638 /* kakao_logo.png */,
+			);
+			path = ImageFile;
+			sourceTree = "<group>";
+		};
+		32483D0D25AFEF47005EE9DE /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				32483D0E25AFF0BD005EE9DE /* UserInfo.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		32483D1325B00467005EE9DE /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				32483D1425B0048F005EE9DE /* UIViewController+.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 		32A4C42025AC596200F3E4BD = {
@@ -110,6 +146,9 @@
 		32A4C42B25AC596200F3E4BD /* KakaoProfile */ = {
 			isa = PBXGroup;
 			children = (
+				32483D1325B00467005EE9DE /* extension */,
+				32483D0D25AFEF47005EE9DE /* DB */,
+				32483D0725AFDB5F005EE9DE /* ImageFile */,
 				32457BE925AF03360072FF6C /* ViewController */,
 				32A4C42C25AC596200F3E4BD /* AppDelegate.swift */,
 				32A4C42E25AC596200F3E4BD /* SceneDelegate.swift */,
@@ -242,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				321C220625B123B700C65638 /* kakao_logo.png in Resources */,
 				32A4C43925AC596400F3E4BD /* LaunchScreen.storyboard in Resources */,
 				32A4C43625AC596300F3E4BD /* Assets.xcassets in Resources */,
 				32A4C43425AC596200F3E4BD /* Main.storyboard in Resources */,
@@ -269,10 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32483D1525B0048F005EE9DE /* UIViewController+.swift in Sources */,
 				32D0F82C25AD896700C3D287 /* EditViewController.swift in Sources */,
 				32A4C43125AC596200F3E4BD /* ViewController.swift in Sources */,
 				32A4C42D25AC596200F3E4BD /* AppDelegate.swift in Sources */,
+				32483D0325AFD8FF005EE9DE /* LoginViewController.swift in Sources */,
+				32483D0F25AFF0BD005EE9DE /* UserInfo.swift in Sources */,
 				32A4C42F25AC596200F3E4BD /* SceneDelegate.swift in Sources */,
+				32483D2425B017FF005EE9DE /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
