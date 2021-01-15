@@ -31,13 +31,13 @@ class LoginViewController: UIViewController {
             guard let mainViewController = self.storyboard?.instantiateViewController(withIdentifier: "mainViewController") else { return }
                             self.navigationController?.pushViewController(mainViewController, animated: true)
         case .emptyId:
-            showAlert(controller: self, message: "\(UserInfo.UserVerificationState.emptyId)", seconds: 0.5)
+            showAlert(controller: self, message: "\(checkUser)", seconds: 0.5)
         case .emptyPassword:
-            showAlert(controller: self, message: "\(UserInfo.UserVerificationState.emptyPassword)", seconds: 0.5)
+            showAlert(controller: self, message: "\(checkUser)", seconds: 0.5)
         case .noExistId:
-            showAlert(controller: self, message: "\(UserInfo.UserVerificationState.noExistId)", seconds: 0.5)
+            showAlert(controller: self, message: "\(checkUser)", seconds: 0.5)
         case .wrongPassword:
-            showAlert(controller: self, message: "\(UserInfo.UserVerificationState.wrongPassword)", seconds: 0.5)
+            showAlert(controller: self, message: "\(checkUser)", seconds: 0.5)
         }
     }
 }
