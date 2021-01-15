@@ -29,14 +29,14 @@ class UserInfo {
     }
     
     struct User {
-        var userId: String
-        var userPassword: String
+        var id: String
+        var password: String
     }
     
     var model: [User] = [
-        User(userId: "blue", userPassword: "kakao"),
-        User(userId: "JK", userPassword: "godrm"),
-        User(userId: "lcw", userPassword: "1234")
+        User(id: "blue", password: "kakao"),
+        User(id: "JK", password: "godrm"),
+        User(id: "lcw", password: "1234")
     ]
     
     func checkUser(id:String, pw:String) -> UserVerificationState {
@@ -46,8 +46,8 @@ class UserInfo {
             return .emptyPassword
         }
         for user in model {
-            if user.userId == id {
-                if user.userPassword == pw {
+            if user.id == id {
+                if user.password == pw {
                     return .success
                 } else {
                     return .wrongPassword
