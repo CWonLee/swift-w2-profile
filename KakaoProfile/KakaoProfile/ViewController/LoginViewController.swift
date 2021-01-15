@@ -30,14 +30,14 @@ class LoginViewController: UIViewController {
         case .success:
             guard let mainViewController = self.storyboard?.instantiateViewController(withIdentifier: "mainViewController") else { return }
                             self.navigationController?.pushViewController(mainViewController, animated: true)
-        case .blankID:
-            showToast(controller: self, message: "\(UserInfo.CheckState.blankID)", seconds: 0.5)
-        case .blankPw:
-            showToast(controller: self, message: "\(UserInfo.CheckState.blankPw)", seconds: 0.5)
-        case .noID:
-            showToast(controller: self, message: "\(UserInfo.CheckState.noID)", seconds: 0.5)
-        case .wrongPw:
-            showToast(controller: self, message: "\(UserInfo.CheckState.wrongPw)", seconds: 0.5)
+        case .emptyId:
+            showToast(controller: self, message: "\(UserInfo.UserVerificationState.emptyId)", seconds: 0.5)
+        case .emptyPassword:
+            showToast(controller: self, message: "\(UserInfo.UserVerificationState.emptyPassword)", seconds: 0.5)
+        case .noExistId:
+            showToast(controller: self, message: "\(UserInfo.UserVerificationState.noExistId)", seconds: 0.5)
+        case .wrongPassword:
+            showToast(controller: self, message: "\(UserInfo.UserVerificationState.wrongPassword)", seconds: 0.5)
         }
     }
 }

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		321C220625B123B700C65638 /* kakao_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 321C220525B123B700C65638 /* kakao_logo.png */; };
 		32483D0325AFD8FF005EE9DE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32483D0225AFD8FF005EE9DE /* LoginViewController.swift */; };
-		32483D0925AFDB83005EE9DE /* kakao_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 32483D0825AFDB83005EE9DE /* kakao_logo.png */; };
 		32483D0F25AFF0BD005EE9DE /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32483D0E25AFF0BD005EE9DE /* UserInfo.swift */; };
 		32483D1525B0048F005EE9DE /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32483D1425B0048F005EE9DE /* UIViewController+.swift */; };
 		32483D2425B017FF005EE9DE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32483D2325B017FF005EE9DE /* MainViewController.swift */; };
@@ -41,8 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		321C220525B123B700C65638 /* kakao_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kakao_logo.png; sourceTree = "<group>"; };
 		32483D0225AFD8FF005EE9DE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		32483D0825AFDB83005EE9DE /* kakao_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kakao_logo.png; path = ../../../../../../Desktop/kakao_logo.png; sourceTree = "<group>"; };
 		32483D0E25AFF0BD005EE9DE /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		32483D1425B0048F005EE9DE /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		32483D2325B017FF005EE9DE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		32483D0725AFDB5F005EE9DE /* ImageFile */ = {
 			isa = PBXGroup;
 			children = (
-				32483D0825AFDB83005EE9DE /* kakao_logo.png */,
+				321C220525B123B700C65638 /* kakao_logo.png */,
 			);
 			path = ImageFile;
 			sourceTree = "<group>";
@@ -281,7 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32483D0925AFDB83005EE9DE /* kakao_logo.png in Resources */,
+				321C220625B123B700C65638 /* kakao_logo.png in Resources */,
 				32A4C43925AC596400F3E4BD /* LaunchScreen.storyboard in Resources */,
 				32A4C43625AC596300F3E4BD /* Assets.xcassets in Resources */,
 				32A4C43425AC596200F3E4BD /* Main.storyboard in Resources */,

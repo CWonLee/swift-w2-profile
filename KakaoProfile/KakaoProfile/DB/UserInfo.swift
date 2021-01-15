@@ -9,20 +9,20 @@ import Foundation
 
 class UserInfo {
     
-    enum CheckState: Int, CustomStringConvertible {
-        case success = 0, blankID, blankPw, noID, wrongPw
+    enum UserVerificationState: Int, CustomStringConvertible {
+        case success = 0, emptyId, emptyPassword, noExistId, wrongPassword
         
         var description: String {
             switch self {
             case .success:
                 return "로그인에 성공하였습니다"
-            case .blankID:
+            case .emptyId:
                 return "아이디를 입력해주세요"
-            case .blankPw:
+            case .emptyPassword:
                 return "비밀번호를 입력해주세요"
-            case .noID:
+            case .noExistId:
                 return "아이디가 존재하지 않습니다"
-            case .wrongPw:
+            case .wrongPassword:
                 return "비밀번호가 일치하지 않습니다"
             }
         }
@@ -39,21 +39,21 @@ class UserInfo {
         User(userId: "lcw", userPassword: "1234")
     ]
     
-    func checkUser(id:String, pw:String) -> CheckState {
+    func checkUser(id:String, pw:String) -> UserVerificationState {
         if id == "" {
-            return .blankID
+            return .emptyId
         } else if pw == "" {
-            return .blankPw
+            return .emptyPassword
         }
         for user in model {
             if user.userId == id {
                 if user.userPassword == pw {
                     return .success
                 } else {
-                    return .wrongPw
+                    return .wrongPassword
                 }
             }
         }
-        return .noID
+        return .noExistId
     }
 }
